@@ -4,12 +4,54 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Engineering Portfolio</title>
-  <!-- Add any CSS styles or link to external stylesheets here -->
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 20px;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    h1 {
+      font-size: 28px;
+      font-weight: bold;
+      margin-top: 20px;
+      border-bottom: 2px solid #333;
+    }
+
+    h2 {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    p {
+      margin-top: 10px;
+    }
+
+    button {
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    #experience, #projects, #additional {
+      margin-top: 20px;
+      display: none;
+    }
+  </style>
 </head>
 <body>
   <h1>Experience</h1>
   <button onclick="showExperience()">Show Experience</button>
-  <div id="experience" style="display:none;">
+  <div id="experience">
     <h2>RMS Aerospace, LLC — Advanced Air Mobility Intern</h2>
     <p>June 2023 - Aug 2023</p>
     <p>At RMS Aerospace I focused on stress and fatigue analysis for advanced air mobility applications. I researched and implemented effective solutions for project issues, ensuring structural integrity, and documented them for future reference. Additionally, I explored material composites to enhance product quality and efficiency. I am under an NDA for this project, so what I may discuss here is limited.</p>
@@ -17,21 +59,19 @@
     <h2>Wind Energy Center at UTD — Undergraduate Wind Turbine Researcher</h2>
     <p>May 2022 - Sep 2022</p>
     <p>During my time at the Wind Energy Center at UTD, I served as an undergraduate wind turbine researcher, delving into the complexities of floating offshore vertical axis wind turbines (VAWTs). My research primarily focused on investigating the effects of different types of flutter on VAWTs and studying power generation in MATLAB simulations. By analyzing axial and cross-flow turbine dynamics, I gained valuable insights into improving turbine stability and maximizing power output.</p>
-    <!-- Add more experience sections as needed -->
   </div>
 
   <h1>Projects</h1>
   <button onclick="showProjects()">Show Projects</button>
-  <div id="projects" style="display:none;">
+  <div id="projects">
     <h2>Formula SAE Electric Vehicle — Packaging Team</h2>
     <p>Aug 2022 - Present</p>
     <p>As a dedicated member of the Formula SAE Electric Vehicle Packaging Team, I have been actively contributing to the creation of an Electric Vehicle for the 2025 FSAE EV competition. My role involves utilizing Solidworks to design multiple iterations of the battery pack enclosure, with a focus on reducing size and optimizing cooling. I carefully considered the placement of high voltage and low voltage components to ensure a perfect fit inside the chassis and easy removal for technical inspection.</p>
-    <!-- Add more project sections as needed -->
   </div>
 
   <h1>Additional</h1>
   <button onclick="showAdditional()">Show Additional</button>
-  <div id="additional" style="display:none;">
+  <div id="additional">
     <p>Fashion Design in High School:<br>
     Throughout my four years in high school, I dedicated myself to mastering the art of fashion design through extracurricular sewing and design classes, making me an expert seamstress. Fueling my ambition, I confidently participated in the Fashion Design and Technology Competition hosted by the Technology Student Association, achieving recognition as a state semifinalist. As a testament to my talent and commitment, I designed and crafted six garments, showcasing them in a captivating fashion show that left an indelible mark on the audience. My fashion design portfolio, available at instagram.com/baileyfashiondesign/, reflects my artistic journey and showcases a collection of my innovative and stylish creations.</p>
   </div>
@@ -39,29 +79,17 @@
   <script>
     function showExperience() {
       const experienceSection = document.getElementById('experience');
-      if (experienceSection.style.display === 'none') {
-        experienceSection.style.display = 'block';
-      } else {
-        experienceSection.style.display = 'none';
-      }
+      experienceSection.style.display = experienceSection.style.display === 'none' ? 'block' : 'none';
     }
 
     function showProjects() {
       const projectsSection = document.getElementById('projects');
-      if (projectsSection.style.display === 'none') {
-        projectsSection.style.display = 'block';
-      } else {
-        projectsSection.style.display = 'none';
-      }
+      projectsSection.style.display = projectsSection.style.display === 'none' ? 'block' : 'none';
     }
 
     function showAdditional() {
       const additionalSection = document.getElementById('additional');
-      if (additionalSection.style.display === 'none') {
-        additionalSection.style.display = 'block';
-      } else {
-        additionalSection.style.display = 'none';
-      }
+      additionalSection.style.display = additionalSection.style.display === 'none' ? 'block' : 'none';
     }
   </script>
 </body>

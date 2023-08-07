@@ -5,62 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bailey Hoeppner's Portfolio</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      margin: 20px;
-      max-width: 800px;
-      margin: 0 auto;
-      background-color: #f2f5f9;
-      color: #333;
-    }
-
-    h1 {
-      font-size: 28px;
-      font-weight: bold;
-      margin-top: 20px;
-      border-bottom: 2px solid #007bff;
-      color: #007bff;
-    }
-
-    h2 {
-      font-size: 24px;
-      font-weight: bold;
-    }
-
-    p {
-      margin-top: 10px;
-    }
-
-    button {
-      background-color: #007bff;
-      color: #fff;
-      border: none;
-      padding: 10px 20px;
-      font-size: 16px;
-      cursor: pointer;
-    }
-
-    button:hover {
-      background-color: #0056b3;
-    }
-
-    #experience, #projects, #additional {
-      margin-top: 20px;
-      display: none;
-    }
-
-    /* Custom styles for the banner image */
-    #banner {
-      width: 70%;
-      display: block;
-      margin: 20px auto;
-      max-height: 200px;
-      object-fit: cover;
-    }
+    /* ... Your existing styles ... */
 
     /* Header styles */
     header {
+      position: sticky;
+      top: 0;
       background-color: #007bff;
       padding: 10px;
       text-align: center;
@@ -82,6 +32,11 @@
     nav a:hover {
       text-decoration: underline;
     }
+
+    /* Page content styles */
+    .page-content {
+      padding: 20px;
+    }
   </style>
 </head>
 <body>
@@ -90,58 +45,16 @@
     <h1>Bailey Hoeppner's Portfolio</h1>
   </header>
 
-  <!-- Image banner -->
-  <img id="banner" src="./assets/images/banner.png" alt="banana"/>
- 
   <!-- Navigation links -->
   <nav>
-    <a href="#formula-sae">Formula SAE</a>
-    <a href="#asme">ASME</a>
-    <a href="#l-space">L'Space</a>
-    <a href="#experience">Work Experience</a>
-    <a href="#projects">Personal Projects</a>
+    <a href="./formula-sae.html">Formula SAE</a>
+    <a href="./asme.html">ASME</a>
+    <a href="./l-space.html">L'Space</a>
+    <a href="./work-experience.html">Work Experience</a>
+    <a href="./personal-projects.html">Personal Projects</a>
   </nav>
 
-  <!-- Formula SAE Section -->
-  <h2 id="formula-sae">Formula SAE Electric Vehicle — Packaging Team</h2>
-  <p>Aug 2022 - Present</p>
-  <p>As a dedicated member of the Formula SAE Electric Vehicle Packaging Team...</p>
-
-  <!-- ASME Section -->
-  <h2 id="asme">American Society of Mechanical Engineers UTD</h2>
-  <p>May 2022 – Present</p>
-  <p>As President of ASME at UTD, I led a series of impactful initiatives...</p>
-
-  <!-- L'Space Section -->
-  <h2 id="l-space">NASA L’SPACE Mission Concept Academy</h2>
-  <p>Jan 2022 - Apr 2022</p>
-  <p>In my role as deputy project manager of my team at NASA L’SPACE Mission Concept Academy...</p>
-
-  <!-- Work Experience Section -->
-  <h2 id="experience">Experience</h2>
-  <button onclick="showExperience()">Show Experience</button>
-  <div id="experience-content">
-    <!-- ... Your experience entries ... -->
-  </div>
-
-  <!-- Personal Projects Section -->
-  <h2 id="projects">Projects</h2>
-  <button onclick="showProjects()">Show Projects</button>
-  <div id="projects-content">
-    <!-- ... Your projects entries ... -->
-  </div>
-
-  <script>
-    // JavaScript to toggle the visibility of experience and projects sections
-    function showExperience() {
-      const experienceSection = document.getElementById('experience-content');
-      experienceSection.style.display = experienceSection.style.display === 'none' ? 'block' : 'none';
-    }
-
-    function showProjects() {
-      const projectsSection = document.getElementById('projects-content');
-      projectsSection.style.display = projectsSection.style.display === 'none' ? 'block' : 'none';
-    }
-  </script>
+  <!-- Image banner -->
+  <img id="banner" src="./assets/images/banner.png" alt="banana"/>
 </body>
 </html>

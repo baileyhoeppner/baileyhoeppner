@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Engineering Portfolio</title>
+  <title>Bailey Hoeppner's Portfolio</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -58,47 +58,89 @@
       max-height: 200px;
       object-fit: cover;
     }
+
+    /* Header styles */
+    header {
+      background-color: #007bff;
+      padding: 10px;
+      text-align: center;
+      color: #fff;
+    }
+
+    /* Navigation links styles */
+    nav {
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    nav a {
+      color: #007bff;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body>
+  <!-- Header -->
+  <header>
+    <h1>Bailey Hoeppner's Portfolio</h1>
+  </header>
+
   <!-- Image banner -->
   <img id="banner" src="./assets/images/banner.png" alt="banana"/>
  
-  <h1>Experience</h1>
+  <!-- Navigation links -->
+  <nav>
+    <a href="#formula-sae">Formula SAE</a>
+    <a href="#asme">ASME</a>
+    <a href="#l-space">L'Space</a>
+    <a href="#experience">Work Experience</a>
+    <a href="#projects">Personal Projects</a>
+  </nav>
+
+  <!-- Formula SAE Section -->
+  <h2 id="formula-sae">Formula SAE Electric Vehicle — Packaging Team</h2>
+  <p>Aug 2022 - Present</p>
+  <p>As a dedicated member of the Formula SAE Electric Vehicle Packaging Team...</p>
+
+  <!-- ASME Section -->
+  <h2 id="asme">American Society of Mechanical Engineers UTD</h2>
+  <p>May 2022 – Present</p>
+  <p>As President of ASME at UTD, I led a series of impactful initiatives...</p>
+
+  <!-- L'Space Section -->
+  <h2 id="l-space">NASA L’SPACE Mission Concept Academy</h2>
+  <p>Jan 2022 - Apr 2022</p>
+  <p>In my role as deputy project manager of my team at NASA L’SPACE Mission Concept Academy...</p>
+
+  <!-- Work Experience Section -->
+  <h2 id="experience">Experience</h2>
   <button onclick="showExperience()">Show Experience</button>
-  <div id="experience">
-    <!-- Experience content here -->
+  <div id="experience-content">
     <!-- ... Your experience entries ... -->
   </div>
 
-  <h1>Projects</h1>
+  <!-- Personal Projects Section -->
+  <h2 id="projects">Projects</h2>
   <button onclick="showProjects()">Show Projects</button>
-  <div id="projects">
-    <!-- Projects content here -->
+  <div id="projects-content">
     <!-- ... Your projects entries ... -->
   </div>
 
-  <h1>Additional</h1>
-  <button onclick="showAdditional()">Show Additional</button>
-  <div id="additional">
-    <!-- Additional content here -->
-    <!-- ... Your additional entries ... -->
-  </div>
-
   <script>
+    // JavaScript to toggle the visibility of experience and projects sections
     function showExperience() {
-      const experienceSection = document.getElementById('experience');
+      const experienceSection = document.getElementById('experience-content');
       experienceSection.style.display = experienceSection.style.display === 'none' ? 'block' : 'none';
     }
 
     function showProjects() {
-      const projectsSection = document.getElementById('projects');
+      const projectsSection = document.getElementById('projects-content');
       projectsSection.style.display = projectsSection.style.display === 'none' ? 'block' : 'none';
-    }
-
-    function showAdditional() {
-      const additionalSection = document.getElementById('additional');
-      additionalSection.style.display = additionalSection.style.display === 'none' ? 'block' : 'none';
     }
   </script>
 </body>

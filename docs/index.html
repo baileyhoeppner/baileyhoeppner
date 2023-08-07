@@ -37,6 +37,22 @@
     .page-content {
       padding: 20px;
     }
+
+    /* Centered banner styles */
+    #banner-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 300px; /* Adjust the height to your preference */
+      overflow: hidden;
+    }
+
+    /* Banner image styles */
+    #banner {
+      width: auto;
+      height: 100%;
+      object-fit: cover;
+    }
   </style>
 </head>
 <body>
@@ -54,7 +70,10 @@
     <a href="./personal-projects.html">Personal Projects</a>
   </nav>
 
-  <!-- Image banner -->
-  <img id="banner" src="./assets/images/banner.png" alt="banana"/>
+  <!-- Centered Image banner -->
+  <div id="banner-container">
+    <img id="banner" src="./assets/images/banner.png" alt="banana"/>
+  </div>
+
 </body>
 </html>

@@ -1,5 +1,5 @@
 ### Hi there 👋
-![meow]([banner.png](https://github.com/baileyhoeppner/baileyhoeppner/blob/main/images/banner.png))
+![meow](banner.png)
 <!--
 **baileyhoeppner/baileyhoeppner** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 

@@ -7,36 +7,23 @@
   <style>
     /* ... Your existing styles ... */
 
-    /* Header styles */
-    header {
-      position: sticky;
-      top: 0;
-      background-color: #007bff;
-      padding: 10px;
-      text-align: center;
-      color: #fff;
+    /* Flexbox styles to center the banner */
+    #banner-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 300px; /* Adjust the height to your preference */
+      overflow: hidden;
     }
 
-    /* Navigation links styles */
-    nav {
-      margin-top: 20px;
-      text-align: center;
+    /* Banner image styles */
+    #banner {
+      width: auto;
+      height: 100%;
+      object-fit: cover;
     }
 
-    nav a {
-      color: #007bff;
-      margin: 0 10px;
-      text-decoration: none;
-    }
-
-    nav a:hover {
-      text-decoration: underline;
-    }
-
-    /* Page content styles */
-    .page-content {
-      padding: 20px;
-    }
+    /* ... Your existing styles ... */
   </style>
 </head>
 <body>
@@ -47,14 +34,14 @@
 
   <!-- Navigation links -->
   <nav>
-    <a href="./formula-sae.html">Formula SAE</a>
-    <a href="./asme.html">ASME</a>
-    <a href="./l-space.html">L'Space</a>
-    <a href="./work-experience.html">Work Experience</a>
-    <a href="./personal-projects.html">Personal Projects</a>
+    <!-- ... Your existing navigation links ... -->
   </nav>
 
   <!-- Image banner -->
-  <img id="banner" src="./assets/images/banner.png" alt="banana"/>
+  <div id="banner-container">
+    <img id="banner" src="./assets/images/banner.png" alt="banana"/>
+  </div>
+
+  <!-- ... Your existing content ... -->
 </body>
 </html>
